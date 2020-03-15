@@ -15,12 +15,13 @@
   "author": "cuc_ygh",
   "license": "Apache-2.0",
   "dependencies": {
-    "axios": "^0.18.0",
-    "koa": "2.7.0",
-    "koa-bodyparser": "4.2.1",
-    "koa-ejs": "4.2.0",
-    "koa-router": "7.4.0",
-    "koa-static": "5.0.0"
+    "axios": "^0.18.1",
+    "ejs": "^3.0.1",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-ejs": "^4.2.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0"
   },
   "devDependencies": {
     "@babel/core": "7.4.4",
@@ -37,8 +38,8 @@
     "koa-webpack-hot-middleware": "1.0.3",
     "koa-webpack-middleware": "1.0.7",
     "koa2-webpack4-dev-middleware": "1.0.1",
-    "nodemon": "1.19.0",
-    "webpack": "4.31.0",
-    "webpack-cli": "3.3.2"
+    "nodemon": "^1.19.0",
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2"
   }
 }
