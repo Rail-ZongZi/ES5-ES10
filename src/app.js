@@ -1,6 +1,9 @@
 /**
  * 粽子
  */
+import "./style/normalize.css";
+import "./style/base.css"
+
 class Preae {
   constructor(name) {
     this.name = name

@@ -6,7 +6,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   target: "web",
-  mode: "development",
+  // mode: "development",
   entry: {
     "index": "./src/app.js"
   },
@@ -20,6 +20,13 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: "babel-loader"
+      },
+      {
+        test: /\.css$/i,
+        use: [
+          'style-loader',
+          { loader: 'css-loader', options: { sourceMap: true } },
+        ]
       }
     ]
   },
@@ -35,7 +42,8 @@ module.exports = {
     contentBase: path.join(__dirname, 'public'),
     hot: true,
     host: '0.0.0.0',
-    port: 9000
+    port: 9000,
+    compress: true
   }
 };
 
