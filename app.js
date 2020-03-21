@@ -10,6 +10,7 @@ import webpackHotMiddleware from 'koa-webpack-hot-middleware'
 import Users from './routes/user.js'
 
 const app = new Koa()
+const prot = 8099
 
 Views(app, {
   root: path.join(__dirname, 'views'),
@@ -31,6 +32,6 @@ app.use(Static(path.join(__dirname, 'static')))
 app.use(BodyParser())
 
 app.use(Users.routes()).use(Users.allowedMethods())
-app.listen(8080)
+app.listen(prot)
 
-global.console.log(`server is listen, http://localhost:8080`)
+global.console.log(`server is listen, http://localhost:${prot}`)
