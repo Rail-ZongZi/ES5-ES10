@@ -1,45 +1,33 @@
 {
-  "name": "koa2-es10",
+  "name": "ES-OOP",
   "version": "1.0.0",
-  "description": "koa2-es development kit",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "babel": "babel-node app.js",
-    "serve": "nodemon --exec npm run babel",
-    "webpack": "webpack -w"
+    "dev": "webpack-dev-server",
+    "build": "webpack"
   },
-  "repository": "git@github.com:cucygh/es-cli.git",
-  "keywords": [
-    "cuc_ygh"
-  ],
-  "author": "cuc_ygh",
-  "license": "Apache-2.0",
-  "dependencies": {
-    "axios": "^0.18.1",
-    "ejs": "^3.0.1",
-    "koa": "^2.7.0",
-    "koa-bodyparser": "^4.2.1",
-    "koa-ejs": "^4.2.0",
-    "koa-router": "^7.4.0",
-    "koa-static": "^5.0.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rail-ZongZi/ES5-ES10.git"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rail-ZongZi/ES5-ES10/issues"
+  },
+  "homepage": "https://github.com/Rail-ZongZi/ES5-ES10#readme",
   "devDependencies": {
-    "@babel/core": "7.4.4",
-    "@babel/node": "7.2.2",
-    "@babel/preset-env": "7.4.4",
-    "eslint": "5.16.0",
-    "eslint-config-standard": "12.0.0",
-    "eslint-plugin-import": "2.17.2",
-    "eslint-plugin-node": "9.0.1",
-    "eslint-plugin-promise": "4.1.1",
-    "eslint-plugin-standard": "4.0.0",
-    "eventsource-polyfill": "0.9.6",
-    "koa-webpack-dev-middleware": "2.0.2",
-    "koa-webpack-hot-middleware": "1.0.3",
-    "koa-webpack-middleware": "1.0.7",
-    "koa2-webpack4-dev-middleware": "1.0.1",
-    "nodemon": "^1.19.0",
-    "webpack": "^4.31.0",
-    "webpack-cli": "^3.3.2"
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "babel-loader": "^8.1.0"
   }
 }
