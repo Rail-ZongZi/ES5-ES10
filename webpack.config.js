@@ -23,6 +23,7 @@ module.exports = {
       }
     ]
   },
+  devtool: "source-map",
   plugins: [new HtmlWebpackPlugin({
     title: "js设计模式",
     template: "./index.html",
